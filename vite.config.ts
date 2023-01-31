@@ -8,7 +8,6 @@ import Components from 'unplugin-vue-components/vite'
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 
 
-
 export default defineConfig({
 	resolve: {
 		alias: {
@@ -29,6 +28,7 @@ export default defineConfig({
 			imports: ['vue'],
 			resolvers: [AntDesignVueResolver()],
 			dts: 'types/auto-imports.d.ts',
+			dirs: ['src/stores/modules'],
 			vueTemplate: true, //支持Vue 模版自动引入
 		}),
 
