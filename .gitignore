@@ -26,4 +26,4 @@ dist-ssr
 # 配置文件
 pnpm-lock.yaml
 types/auto-imports.d.ts
-types/components.d.ts
+# types/components.d.ts
