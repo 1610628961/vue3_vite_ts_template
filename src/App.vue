@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import Hello from './components/Hello.vue';
-
+import Hello from './components/Hello.vue'
 
 const foo = ref('hi1')
-
-
 </script>
 
 <template>
@@ -13,6 +10,8 @@ const foo = ref('hi1')
 	<p>{{ foo }}</p>
 
 	<Hello></Hello>
+
+	<RouterView></RouterView>
 </template>
 
 <style scoped></style>
