@@ -3,10 +3,10 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-import AutoImport from 'unplugin-auto-import/vite';
+import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
-
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 export default defineConfig({
 	resolve: {
@@ -14,6 +14,7 @@ export default defineConfig({
 			'@': resolve('src'),
 			'#': resolve('types'),
 		},
+		extensions: ['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json'], //默认配置，不建议导入扩展名 .vue ，会影响类型支持
 	},
 	plugins: [
 		vue(),
@@ -38,6 +39,12 @@ export default defineConfig({
 			resolvers: [AntDesignVueResolver()],
 			include: [/\.vue$/, /\.vue\?vue/],
 			dts: 'types/components.d.ts',
+		}),
+
+		//生成 svg 雪碧图
+		createSvgIconsPlugin({
+			iconDirs: [resolve(process.cwd(), 'src/icons')],
+			symbolId: 'icon-[dir]-[name]',
 		}),
 	],
 })

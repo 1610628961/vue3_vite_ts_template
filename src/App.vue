@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import Hello from './components/Hello.vue'
+import Hello from '@/components/Hello.vue'
+import SvgIcon from '@/components/SvgIcon/index.vue'
 
 const foo = ref('hi1')
 </script>
@@ -10,6 +11,8 @@ const foo = ref('hi1')
 	<p>{{ foo }}</p>
 
 	<Hello></Hello>
+
+	<SvgIcon name="caihong"></SvgIcon>
 
 	<RouterView></RouterView>
 </template>
