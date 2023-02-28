@@ -9,4 +9,5 @@ const userStore = useUserStore()
 	<a-button @click="userStore.increment">{{ userStore.count }}</a-button>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
