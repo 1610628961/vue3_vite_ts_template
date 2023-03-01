@@ -1,4 +1,4 @@
-import type { AxiosRequestConfig, AxiosInstance } from 'axios'
+import type { AxiosRequestConfig, AxiosInstance, AxiosResponse } from 'axios'
 import type { ICreateAxiosOptions, IAxiosStrategy } from '#/http/axios'
 
 import axios from 'axios'
@@ -71,6 +71,4 @@ export default class VAxios {
 			},
 		)
 	}
-
-	
 }

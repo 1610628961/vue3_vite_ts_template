@@ -2,6 +2,12 @@
 import Hello from '@/components/Hello.vue'
 import SvgIcon from '@/components/SvgIcon/index.vue'
 
+import { EnvEnum } from '@/enums/env_enum'
+import {useGlobalSetting} from '@/hooks/setting/useGlobalSetting'
+const globalSetting = useGlobalSetting()
+
+console.log('EnvEnum', EnvEnum.socketUrl, globalSetting)
+
 const foo = ref('hi1')
 </script>
 
