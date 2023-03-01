@@ -3,7 +3,7 @@ import Hello from '@/components/Hello.vue'
 import SvgIcon from '@/components/SvgIcon/index.vue'
 
 import { EnvEnum } from '@/enums/env_enum'
-import {useGlobalSetting} from '@/hooks/setting/useGlobalSetting'
+import { useGlobalSetting } from '@/hooks/setting/use_global_setting'
 const globalSetting = useGlobalSetting()
 
 console.log('EnvEnum', EnvEnum.socketUrl, globalSetting)
