@@ -19,7 +19,9 @@
         "paths": {
             "@/*": ["src/*"],
             "#/*" : ["types/*"]
-        }
+        },
+        "experimentalDecorators": true,        // 启用装饰器
+        "emitDecoratorMetadata": true          // 为装饰器提供元数据的支持
     }
 
     //   "compilerOptions": {
