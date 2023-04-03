@@ -21,7 +21,11 @@
             "#/*" : ["types/*"]
         },
         "experimentalDecorators": true,        // 启用装饰器
-        "emitDecoratorMetadata": true          // 为装饰器提供元数据的支持
+        "emitDecoratorMetadata": true,          // 为装饰器提供元数据的支持
+        "noUnusedParameters": false,
+        "noUnusedLocals" : false,
+        "noImplicitAny": true,                 // 在表达式和声明上有隐含的 any类型时报错
+        "noImplicitThis": false,
     }
 
     //   "compilerOptions": {
