@@ -7,7 +7,9 @@
 		"dev": "vite",
 		"build": "vue-tsc && vite build",
 		"preview": "vite preview",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"typecheck": "vue-tsc",
+		"lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts,.vue --fix"
 	},
 	"dependencies": {
 		"ant-design-vue": "^3.2.15",
@@ -19,9 +21,14 @@
 		"vue-router": "4"
 	},
 	"devDependencies": {
+		"@rushstack/eslint-patch": "^1.2.0",
 		"@types/lodash": "^4.14.192",
 		"@types/node": "^18.11.18",
 		"@vitejs/plugin-vue": "^4.0.0",
+		"@vue/eslint-config-prettier": "^7.1.0",
+		"@vue/eslint-config-typescript": "^11.0.2",
+		"eslint": "^8.37.0",
+		"eslint-plugin-vue": "^9.10.0",
 		"prettier": "^2.8.3",
 		"typescript": "^4.9.3",
 		"unplugin-auto-import": "^0.13.0",
