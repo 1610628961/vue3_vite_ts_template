@@ -22,6 +22,7 @@ module.exports = {
 		'@typescript-eslint/no-unused-vars': 'off',
 		'vue/require-default-prop': 'off',
 		'vue/multi-word-component-names': 'off',
+		'no-undef': 'off',	//不能有未定义的变量
 	},
 	overrides: [
 		{
